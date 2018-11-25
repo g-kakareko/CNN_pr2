@@ -1,0 +1,94 @@
+The lines that start with ">" are comments. In the dataset, comments and
+sequences with ambiguous amino acid types are removed, resulting in 440115
+sequences. 
+
+Each line contains one protein sequence.
+Here are the encodings of the amino acid types:
+
+Amino acid			Three letter code	One letter code
+alanine				ala			A
+arginine			arg			R
+asparagine			asn			N
+aspartic acid			asp			D
+*asparagine or aspartic acid	asx			B (D or N)
+cysteine			cys			C
+glutamic acid			glu			E
+glutamine			gln			Q
+*glutamine or glutamic acid	glx			Z (E or Q)
+glycine				gly			G
+histidine			his			H
+isoleucine			ile			I
+leucine				leu			L
+*leucine or isoleucine					J (I or L)
+lysine				lys			K
+methionine			met			M
+phenylalanine			phe			F
+*pyrrolysine						O
+proline				pro			P
+serine				ser			S
+*selenocysteine			sel			U (replaced by C)
+threonine			thr			T
+tryptophan			trp			W
+tyrosine			tyr			Y
+valine				val			V
+any							X
+
+Here are the frequencies of the amino acid types in the dataset (with
+sequences with any ambiguous type removed).
+
+Total amino acids in the dataset: 109,364,666
+9865106 A
+3479325 C
+6092314 D
+7193019 E
+4225994 F
+9585460 G
+2903015 H
+6110162 I
+6547033 K
+9798031 L
+2550477 M
+4579841 N
+5078892 P
+4129103 Q
+5776441 R
+6863229 S
+6177017 T
+7685372 V
+1441017 W
+3725275 Y
+
+
+Note that the lines with "*" indicate ambiguous or types that should not
+exist in the sequences. Those have been removed. In case that you like to 
+know the protein sequences and find more information about them, you can
+find them in pdb_seqres_org.txt by matching the sequences. pdb_seqres_org.txt
+contains 461,504 sequences with comments (the protein names).
+
+Here are the frequencies of the letters in the original dataset:
+10014454 A
+      33 B
+ 2688583 C
+ 6162478 D
+ 7296552 E
+ 4279863 F
+ 9732998 G
+ 2936765 H
+ 6177244 I
+ 6623545 K
+ 9930827 L
+ 2582302 M
+ 4629130 N
+       2 O
+ 5141747 P
+ 4178337 Q
+ 5850646 R
+ 6941264 S
+ 6244094 T
+  885554 U
+ 7774077 V
+ 1459853 W
+  552126 X
+ 3766184 Y
+      59 Z
+
